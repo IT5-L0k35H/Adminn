@@ -474,6 +474,24 @@ main-top card
     align-items: center;
 }
 
+.megamenu {
+    display: block !important;
+
+
+}
+
+@media (max-width:600px) {
+    .megamenu {
+
+        display: none !important;
+    }
+
+    .fa .fa-chevron-down {
+        display: none;
+    }
+}
+
+
 /*---------------------------------
 main-top card
 ----------------------*/
@@ -805,7 +823,7 @@ footer
 
 footer.footer {
     padding: 1rem .875rem;
-    direction: ltr;
+    /* direction: ltr; */
     margin-top: 30px;
     background: #36bea6;
     color: #fff;
@@ -818,7 +836,7 @@ footer.footer ul {
 
 .footer ul li {
     display: inline-block;
-    margin: 0px 7px;
+    /* margin: 0px 7px; */
 }
 
 .text-muted {
@@ -832,6 +850,10 @@ footer.footer ul {
     font-weight: 600;
 }
 
+.contact-foot {
+    display: flex;
+    flex-direction: column;
+}
 
 /*---------------------------------
 footer
